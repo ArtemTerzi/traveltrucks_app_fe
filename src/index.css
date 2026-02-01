@@ -1,3 +1,5 @@
+@import 'modern-normalize';
+
 :root {
   --main: #101828;
   --text: #475467;
@@ -13,8 +15,8 @@
   --font-family:
     'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif;
 
-  color: var(--main);
-  background-color: var(--white);
+  --transition-duration: 300ms;
+  --transition-function: ease-in-out;
 }
 
 .visually-hidden {
@@ -38,14 +40,24 @@ body {
 
 html {
   scroll-behavior: smooth;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
 }
 
 body {
+  font-family: var(--font-family);
+  color: var(--main);
+  background-color: var(--white);
   margin: 0;
   overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -90,4 +102,18 @@ img {
 input,
 textarea {
   outline: none;
+  user-select: text;
+  caret-color: auto;
+}
+
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+@media (min-width: 1024px) {
+  .container {
+    padding: 0 64px;
+  }
 }
