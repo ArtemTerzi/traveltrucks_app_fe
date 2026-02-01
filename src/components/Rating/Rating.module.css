@@ -1,0 +1,7 @@
+.full {
+  fill: var(--rating);
+}
+
+.empty {
+  fill: var(--badges);
+}

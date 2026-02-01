@@ -1,0 +1,38 @@
+.user {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+
+  margin-bottom: 16px;
+}
+
+.avatarFallback {
+  background-color: var(--badges);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  height: 60px;
+  width: 60px;
+  border-radius: 60px;
+
+  font-weight: 600;
+  font-size: 24px;
+
+  color: var(--button);
+}
+
+.userInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.userName {
+  font-weight: 500;
+}
+
+.comment {
+  color: var(--text);
+}
