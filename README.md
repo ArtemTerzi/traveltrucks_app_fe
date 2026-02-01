@@ -1,16 +1,95 @@
-# React + Vite
+# 🚐 TravelTrucks — Оренда Кемперів
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Це фронтенд-додаток для компанії "TravelTrucks", яка надає послуги з оренди
+кемперів. Додаток дозволяє користувачам переглядати доступні транспортні засоби,
+фільтрувати їх за різними критеріями, додавати до обраного та бронювати
+вподобані варіанти.
 
-Currently, two official plugins are available:
+## 📋 Зміст
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Технологічний стек](#технологічний-стек)
+- [Особливості та Функціонал](#особливості-та-функціонал)
+- [Встановлення та Запуск](#встановлення-та-запуск)
+- [Структура проєкту](#структура-проєкту)
 
-## React Compiler
+## 🛠 Технологічний стек
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Проєкт реалізовано з використанням наступних технологій та бібліотек:
 
-## Expanding the ESLint configuration
+- **Core:** [React](https://reactjs.org/) (hooks, functional components)
+- **Збірка:** [Vite](https://vitejs.dev/)
+- **Маршрутизація:** [React Router DOM](https://reactrouter.com/)
+- **State Management:** [Redux Toolkit](https://redux-toolkit.js.org/)
+  (включаючи createAsyncThunk)
+- **HTTP запити:** [Axios](https://axios-http.com/)
+- **Стилізація:** CSS Modules
+- **Форми:** [Formik](https://formik.org/)
+- **Сповіщення:**
+  [React Tostify](https://fkhadra.github.io/react-toastify/introduction/)
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## ✨ Особливості та Функціонал
+
+### 🏠 Домашня сторінка
+
+- Банер із закликом до дії.
+- Кнопка "View Now" для переходу до каталогу.
+
+### 🚐 Каталог
+
+- Відображення списку кемперів у вигляді карток.
+- **Фільтрація:**
+  - За локацією.
+  - За типом кузова (Van, Fully Integrated, Alcove).
+  - За обладнанням (AC, Kitchen, TV, Shower тощо).
+- **Пагінація:** Реалізована через кнопку "Load More" (довантаження карток).
+- **Обране:** Можливість додавати кемпери до списку улюблених (дані зберігаються
+  в `localStorage` і не зникають після оновлення сторінки).
+
+### 📝 Сторінка деталей кемпера
+
+- Відкривається в новій вкладці при кліку на "Show more".
+- Детальна інформація про авто (характеристики, опис).
+- Галерея фотографій.
+- **Відгуки:** Список відгуків користувачів із зірковим рейтингом.
+- **Бронювання:** Форма для відправки заявки на бронювання з валідацією полів та
+  спливаючим повідомленням про успішну відправку.
+
+## 🚀 Встановлення та Запуск
+
+Для запуску проєкту локально виконайте наступні кроки:
+
+1. **Клонуйте репозиторій:**
+
+   ```bash
+   git clone https://github.com/your-username/travel-trucks.git
+   ```
+
+2. Встановлення
+
+```bash
+npm install
+```
+
+3. Запуск у режимі розробки
+
+```bash
+npm run dev
+```
+
+4. Збірка проєкту
+
+```bash
+npm run build
+```
+
+5. Перегляд зібраної версії
+
+```bash
+npm run preview
+```
+
+6. Перевірка стилю коду
+
+```bash
+npm run lint
+```
