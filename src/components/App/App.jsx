@@ -11,10 +11,11 @@ const CamperDetailsPage = lazy(
 );
 const Features = lazy(() => import('../Features/Features'));
 const Reviews = lazy(() => import('../Reviews/Reviews'));
+const Loader = lazy(() => import('../Loader/Loader'));
 
 function App() {
   return (
-    <Suspense fallback={<div>LOADING...</div>}>
+    <Suspense fallback={<Loader />}>
       <Routes>
         <Route path="/" element={<SharedLayout />}>
           <Route index element={<HomePage />} />

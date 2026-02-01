@@ -17,7 +17,9 @@
     "prop-types": "^15.8.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-redux": "^9.2.0",
     "react-router": "^7.13.0",
+    "react-spinners": "^0.17.0",
     "react-toastify": "^11.0.5",
     "yup": "^1.7.1"
   },

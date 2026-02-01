@@ -1,0 +1,30 @@
+.camperBottomInfo {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+
+  margin-bottom: 24px;
+}
+
+.camperRating {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+
+  color: var(--text);
+  text-decoration: underline;
+}
+
+.ratingIcon {
+  fill: var(--rating);
+}
+
+.camperLocation {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.iconMap {
+  fill: var(--main);
+}

@@ -1,0 +1,19 @@
+.btn {
+  padding: 16px 48.5px;
+  height: 56px;
+
+  display: inline-block;
+
+  font-weight: 500;
+  letter-spacing: -0.005em;
+  color: var(--white);
+  background-color: var(--button);
+  border-radius: 200px;
+  transition: background-color var(--transition-duration)
+    var(--transition-function);
+}
+
+.btn:hover,
+.btn:focus-visible {
+  background-color: var(--button-hover);
+}
