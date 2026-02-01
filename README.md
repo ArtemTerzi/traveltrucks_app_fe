@@ -66,30 +66,30 @@
 
 2. Встановлення
 
-```bash
-npm install
-```
+   ```bash
+   npm install
+   ```
 
 3. Запуск у режимі розробки
 
-```bash
-npm run dev
-```
+   ```bash
+   npm run dev
+   ```
 
 4. Збірка проєкту
 
-```bash
-npm run build
-```
+   ```bash
+   npm run build
+   ```
 
 5. Перегляд зібраної версії
 
-```bash
-npm run preview
-```
+   ```bash
+   npm run preview
+   ```
 
 6. Перевірка стилю коду
 
-```bash
-npm run lint
-```
+   ```bash
+   npm run lint
+   ```
